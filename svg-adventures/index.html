@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Adventure - Mapping your Web</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>SVG Adventure</h1>
+    <div class="wrapper">
+      <div class="img-wrapper">
+        <img src="./assets/vessel.jpg" />
+      </div>
+      <div class="svg-wrapper">
+        <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="zone-a" class="zone"
+            d="M365 135L501.5 55.5L558.5 90.5L567.5 82.5L624.5 117.5L639.5 107L924 269.5V285L904 296.5L873 277H865.5L863 260L852 257.5L844 263.5V291L793 319.5V326L796.5 331.5V345.5L804 353L741.5 388.5V400.5L765.5 414L804 402.5V457.5L726.5 500V507H723.5L699 491.5V440H689V486L674 477V467.5H668V473L643 459.5V410.5H634V455.5L615.5 444.5V434H608.5V440L585 426V375H576.5V421L558 410.5V400.5H552.5V407L526.5 393.5V341.5H518.5V388.5L502 378.5V369H495V375L473.5 361V311H464.5V355.5L444.5 343.5V329L422 315.5V276.5H414V311L400.5 304V283.5L362.5 262L365 135Z"
+            fill="currentColor" />
+          <path id="zone-b" class="zone"
+            d="M838 573V448L1033 334L1371.5 531.5V588.5L1336.5 563.5L1274.5 599L1258 680L1223.5 701.5V737L1175 767.5L1146 751V701.5H1140V747L1125 739V728.5H1119.5V735L1092.5 718.5V669H1083.5V715L1066.5 705.5V695.5H1062V701.5L1033.5 686.5V637H1027V681.5L1009 672V663.5H1004.5V669L976.5 651.5V604.5H968.5V649L952 639V629H946.5V635.5L917 619V569.5H910V614.5L895 606.5V597H890V602.5L862.5 587V537.5H855.5V583.5L838 573Z"
+            fill="currentColor" />
+          <path id="zone-c" class="zone"
+            d="M1270.5 695L1466.5 581.5L1515.5 612V627L1618.5 687.5V702L1661 726V836.5L1515.5 919.5V927.5L1470.5 903.5V893L1450.5 906.5L1421 889V849.5H1415.5V886.5L1400 877.5V865.5L1391 870.5L1359.5 853V817.5H1351V849.5L1343 844.5V833.5L1324.5 844.5V849.5L1321.5 848.5L1295 832.5V785H1286V828.5L1270.5 820V695Z"
+            fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+
+    <div id="zone-tooltip">
+      <h4>Title</h4>
+      <div>
+        <p class="zone-tooltip__containers">
+          <label>Containers:</label>
+          <span>0</span>
+        </p>
+        <p class="zone-tooltip__capacity">
+          <label>Capacity:</label>
+          <span>0</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="./dist/app.min.js"></script>
+</body>
+
+</html>
