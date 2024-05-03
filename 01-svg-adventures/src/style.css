@@ -29,6 +29,8 @@ section.container {
   font-size: 48px;
 }
 
+/* Wrapper which will hold both layers: IMG & SVG */
+/* This wrapper will define the size of the box */
 .wrapper {
   flex: 1;
   width: 80%;
@@ -39,6 +41,7 @@ section.container {
   position: relative;
 }
 
+/* Each layer set as absolute and on top of each other */
 .img-wrapper,
 .svg-wrapper {
   width: 100%;
@@ -63,35 +66,11 @@ section.container {
   height: 100%;
 }
 
+/* Zone styling */
 .zone {
   transition: 0.2s ease-in-out;
   cursor: pointer;
-
-  color: transparent;
 }
-
-/* 
-#zone-a {
-  color: rgba(218, 65, 103, 0);
-}
-
-#zone-a:hover {
-  color: rgba(218, 65, 103, 0.8);
-}
-
-#zone-b {
-  color: rgba(244, 172, 169, 0);
-}
-#zone-b:hover {
-  color: rgba(244, 172, 169, 0.8);
-}
-
-#zone-c {
-  color: rgba(156, 252, 151, 0);
-}
-#zone-c:hover {
-  color: rgba(156, 252, 151, 0.8);
-} */
 
 .zone.full {
   color: rgba(218, 65, 103, 0.65);
@@ -115,7 +94,6 @@ section.container {
 }
 
 /* Tooltips */
-
 #zone-tooltip {
   opacity: 0;
   visibility: hidden;
@@ -143,8 +121,6 @@ section.container {
   margin: 20px 0 0 0;
 }
 
-#zone-tooltip > div {
-}
 #zone-tooltip label {
   font-weight: 700;
   display: block;
